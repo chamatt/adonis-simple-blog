@@ -26,6 +26,12 @@ Route.get("/posts", "PostController.index");
 
 Route.post("/posts", "PostController.store");
 
+Route.put("/posts/:id", "PostController.update");
+
 Route.get("/posts/add", "PostController.add");
+
+Route.get("/posts/edit/:id", "PostController.edit");
+
+Route.delete("/posts/:id", "PostController.destroy");
 
 Route.get("/posts/:id", "PostController.details");
